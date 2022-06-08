@@ -1,0 +1,212 @@
+{
+  "took" : 0,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 16,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "opencast_event",
+        "_type" : "_doc",
+        "_id" : "sample-event-11mh_default_org",
+        "_score" : 1.0,
+        "_source" : {
+          "workflow_id" : [
+            2535
+          ],
+          "description" : [
+            "Free stock footage of a strong river flowing down the dense green summer forest on a sunny day, late in the evening. Different trees on each side of the river, while white bubbles coming from the water as it rushes down the rocky landscape. This footage was taken with a Mavic 2 Pro drone mounted on a tripod with a Katana grip"
+          ],
+          "source" : [
+            "https://www.naturestockvideos.com/free-stock-footage-of-rivers/strong-river-flowing-down-the-green-forest/"
+          ],
+          "title" : [
+            "Sample_event_11_Strong river flowing down the forest"
+          ],
+          "acl_permission_read" : [
+            [
+              "ROLE_ANONYMOUS",
+              "ROLE_USER_ADMIN",
+              "ROLE_ADMIN"
+            ]
+          ],
+          "has_open_comments" : [
+            false
+          ],
+          "uid" : [
+            "sample-event-11"
+          ],
+          "contributor" : [ ],
+          "acl_permission_write" : [
+            [
+              "ROLE_USER_ADMIN",
+              "ROLE_ADMIN"
+            ]
+          ],
+          "publication" : [
+            {
+              "attachment" : [ ],
+              "catalog" : [ ],
+              "channel" : "internal",
+              "mimetype" : "",
+              "track" : [
+                {
+                  "duration" : 29997,
+                  "size" : 186375203,
+                  "mimetype" : "video/mp4",
+                  "id" : "b7b50c65-9f46-4f3f-99c8-855069b68180",
+                  "tag" : "http://localhost:8080/static/mh_default_org/internal/sample-event-11/e7d32ea3-5a3a-4037-8378-2f890436b004/strong_river_flowing_down_the_green_forest.mp4",
+                  "type" : "Track"
+                }
+              ]
+            },
+            {
+              "attachment" : [
+                {
+                  "size" : 156020,
+                  "mimetype" : "image/jpeg",
+                  "id" : "26b15a44-d9c2-4115-ab53-86fa61d60b5c",
+                  "tag" : "http://localhost:8080/static/mh_default_org/engage-player/sample-event-11/951bea93-c616-4d32-bbb9-de005a8bccee/strong_river_flowing_down_the_green_forest_1_000s_player.jpg",
+                  "type" : "Attachment"
+                },
+                {
+                  "size" : 4879,
+                  "mimetype" : "image/jpeg",
+                  "id" : "45099e4d-9600-4d22-bac3-a6edf268a6f8",
+                  "tag" : "http://localhost:8080/static/mh_default_org/engage-player/sample-event-11/b40e64ee-86be-4657-8e0a-d89a79f3331c/strong_river_flowing_down_the_green_forest_1_000s_search.jpg",
+                  "type" : "Attachment"
+                },
+                {
+                  "size" : -1,
+                  "mimetype" : "text/xml",
+                  "id" : "21c7b984-5049-4959-bbfa-f92e832345b7",
+                  "tag" : "http://localhost:8080/static/mh_default_org/engage-player/sample-event-11/52462dd4-8997-4fd8-870a-cc65f361e716/episode_security.xml",
+                  "type" : "Attachment"
+                }
+              ],
+              "catalog" : [
+                {
+                  "size" : -1,
+                  "mimetype" : "text/xml",
+                  "id" : "571fd33b-f32c-4dd9-a79b-e66de2fc13f7",
+                  "tag" : "http://localhost:8080/static/mh_default_org/engage-player/sample-event-11/d64ee418-8582-4112-a822-c6288c2b3d2f/dublincore.xml",
+                  "type" : "Catalog"
+                }
+              ],
+              "channel" : "engage-player",
+              "mimetype" : "text/html",
+              "track" : [
+                {
+                  "duration" : 29997,
+                  "size" : 186375203,
+                  "mimetype" : "video/mp4",
+                  "id" : "d0b1a5b5-eefd-4479-8b63-02038c85ffd3",
+                  "tag" : "http://localhost:8080/static/mh_default_org/engage-player/sample-event-11/e7d32ea3-5a3a-4037-8378-2f890436b004/strong_river_flowing_down_the_green_forest.mp4",
+                  "type" : "Track"
+                }
+              ]
+            }
+          ],
+          "workflow_state" : [
+            "SUCCEEDED"
+          ],
+          "text" : [
+            "2535",
+            "Free stock footage of a strong river flowing down the dense green summer forest on a sunny day, late in the evening. Different trees on each side of the river, while white bubbles coming from the water as it rushes down the rocky landscape. This footage was taken with a Mavic 2 Pro drone mounted on a tripod with a Katana grip",
+            "https://www.naturestockvideos.com/free-stock-footage-of-rivers/strong-river-flowing-down-the-green-forest/",
+            "Sample_event_11_Strong river flowing down the forest",
+            "false",
+            "sample-event-11",
+            "{attachment=[Ljava.util.HashMap;@4fd29840, catalog=[Ljava.util.HashMap;@1264a865, channel=internal, mimetype=, track=[Ljava.util.HashMap;@e375332}",
+            "{attachment=[Ljava.util.HashMap;@547b5624, catalog=[Ljava.util.HashMap;@fb0d473, channel=engage-player, mimetype=text/html, track=[Ljava.util.HashMap;@38206260}",
+            "SUCCEEDED",
+            "2019-06-18T07:40:53Z",
+            "EVENTS.EVENTS.STATUS.PROCESSED",
+            "Nature Stock Videos",
+            "2019-06-18T07:40:53Z",
+            "noop",
+            "{\"acl\":{\"ace\":[{\"allow\":true,\"role\":\"ROLE_ANONYMOUS\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_USER_ADMIN\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_USER_ADMIN\",\"action\":\"write\"},{\"allow\":true,\"role\":\"ROLE_ADMIN\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_ADMIN\",\"action\":\"write\"}]}}",
+            "false",
+            "CC0",
+            "1",
+            "false",
+            "2019-06-18T07:40:53Z"
+          ],
+          "start_date" : [
+            "2019-06-18T07:40:53Z"
+          ],
+          "event_status" : [
+            "EVENTS.EVENTS.STATUS.PROCESSED"
+          ],
+          "presenter" : [
+            "Nature Stock Videos"
+          ],
+          "created" : [
+            "2019-06-18T07:40:53Z"
+          ],
+          "workflow_definition_id" : [
+            "noop"
+          ],
+          "access_policy" : [
+            "{\"acl\":{\"ace\":[{\"allow\":true,\"role\":\"ROLE_ANONYMOUS\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_USER_ADMIN\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_USER_ADMIN\",\"action\":\"write\"},{\"allow\":true,\"role\":\"ROLE_ADMIN\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_ADMIN\",\"action\":\"write\"}]}}"
+          ],
+          "needs_cutting" : [
+            false
+          ],
+          "text_fuzzy" : [
+            "2535",
+            "Free stock footage of a strong river flowing down the dense green summer forest on a sunny day, late in the evening. Different trees on each side of the river, while white bubbles coming from the water as it rushes down the rocky landscape. This footage was taken with a Mavic 2 Pro drone mounted on a tripod with a Katana grip",
+            "https://www.naturestockvideos.com/free-stock-footage-of-rivers/strong-river-flowing-down-the-green-forest/",
+            "Sample_event_11_Strong river flowing down the forest",
+            "false",
+            "sample-event-11",
+            "{attachment=[Ljava.util.HashMap;@4fd29840, catalog=[Ljava.util.HashMap;@1264a865, channel=internal, mimetype=, track=[Ljava.util.HashMap;@e375332}",
+            "{attachment=[Ljava.util.HashMap;@547b5624, catalog=[Ljava.util.HashMap;@fb0d473, channel=engage-player, mimetype=text/html, track=[Ljava.util.HashMap;@38206260}",
+            "SUCCEEDED",
+            "2019-06-18T07:40:53Z",
+            "EVENTS.EVENTS.STATUS.PROCESSED",
+            "Nature Stock Videos",
+            "2019-06-18T07:40:53Z",
+            "noop",
+            "{\"acl\":{\"ace\":[{\"allow\":true,\"role\":\"ROLE_ANONYMOUS\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_USER_ADMIN\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_USER_ADMIN\",\"action\":\"write\"},{\"allow\":true,\"role\":\"ROLE_ADMIN\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_ADMIN\",\"action\":\"write\"}]}}",
+            "false",
+            "CC0",
+            "1",
+            "false",
+            "2019-06-18T07:40:53Z"
+          ],
+          "license" : [
+            "CC0"
+          ],
+          "acl_permission_contribute" : [
+            [ ]
+          ],
+          "archive_version" : [
+            1
+          ],
+          "has_comments" : [
+            false
+          ],
+          "organization" : [
+            "mh_default_org"
+          ],
+          "technical_start" : [
+            "2019-06-18T07:40:53Z"
+          ],
+          "object" : [
+            "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><ns3:event xmlns:ns2=\"http://mediapackage.opencastproject.org\" xmlns:ns3=\"http://index.matterhorn.opencastproject.org\"><ns3:identifier>sample-event-11</ns3:identifier><ns3:organization>mh_default_org</ns3:organization><ns3:title>Sample_event_11_Strong river flowing down the forest</ns3:title><ns3:description>Free stock footage of a strong river flowing down the dense green summer forest on a sunny day, late in the evening. Different trees on each side of the river, while white bubbles coming from the water as it rushes down the rocky landscape. This footage was taken with a Mavic 2 Pro drone mounted on a tripod with a Katana grip</ns3:description><ns3:presenters><ns3:presenter>Nature Stock Videos</ns3:presenter></ns3:presenters><ns3:contributors/><ns3:source>https://www.naturestockvideos.com/free-stock-footage-of-rivers/strong-river-flowing-down-the-green-forest/</ns3:source><ns3:created>2019-06-18T07:40:53Z</ns3:created><ns3:license>CC0</ns3:license><ns3:access_policy>{\"acl\":{\"ace\":[{\"allow\":true,\"role\":\"ROLE_ANONYMOUS\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_USER_ADMIN\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_USER_ADMIN\",\"action\":\"write\"},{\"allow\":true,\"role\":\"ROLE_ADMIN\",\"action\":\"read\"},{\"allow\":true,\"role\":\"ROLE_ADMIN\",\"action\":\"write\"}]}}</ns3:access_policy><ns3:workflow_state>SUCCEEDED</ns3:workflow_state><ns3:workflow_id>2535</ns3:workflow_id><ns3:workflow_definition_id>noop</ns3:workflow_definition_id><ns3:recording_start_time>2019-06-18T07:40:53Z</ns3:recording_start_time><ns3:has_comments>false</ns3:has_comments><ns3:has_open_comments>false</ns3:has_open_comments><ns3:has_preview>false</ns3:has_preview><ns3:needs_cutting>false</ns3:needs_cutting><ns3:publications><ns3:publication id=\"f419c1c6-bea6-4d13-a8ab-39f7eaad3fd8\" channel=\"internal\"><ns2:tags><ns2:tag>archive</ns2:tag></ns2:tags><ns2:url>http://localhost:8080/admin-ng/index.html#/events/events/sample-event-11/tools/editor</ns2:url><ns2:media><ns2:track id=\"b7b50c65-9f46-4f3f-99c8-855069b68180\" type=\"presenter/preview\" ref=\"track:e9bea010-c81f-4d55-8d12-699e887c5c14\"><ns2:mimetype>video/mp4</ns2:mimetype><ns2:tags><ns2:tag>atom</ns2:tag><ns2:tag>default</ns2:tag><ns2:tag>engage-download</ns2:tag><ns2:tag>engage-streaming</ns2:tag><ns2:tag>rss</ns2:tag></ns2:tags><ns2:url>http://localhost:8080/static/mh_default_org/internal/sample-event-11/e7d32ea3-5a3a-4037-8378-2f890436b004/strong_river_flowing_down_the_green_forest.mp4</ns2:url><ns2:size>186375203</ns2:size><ns2:checksum type=\"md5\">c8c5561a5d55a255081f80073830e029</ns2:checksum><ns2:duration>29997</ns2:duration><ns2:video id=\"video-1\"><ns2:device/><ns2:encoder type=\"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10\"/><ns2:framecount>899</ns2:framecount><ns2:bitrate>4.9702268E7</ns2:bitrate><ns2:framerate>29.97003</ns2:framerate><ns2:resolution>3840x2160</ns2:resolution></ns2:video><ns2:live>false</ns2:live><ns2:master>false</ns2:master></ns2:track></ns2:media><ns2:attachments/><ns2:metadata/></ns3:publication><ns3:publication id=\"7de975f8-a6dd-406c-b5f0-b0bfff6b1699\" channel=\"engage-player\"><ns2:mimetype>text/html</ns2:mimetype><ns2:tags><ns2:tag>archive</ns2:tag></ns2:tags><ns2:url>http://localhost:8080/play/sample-event-11</ns2:url><ns2:media><ns2:track id=\"d0b1a5b5-eefd-4479-8b63-02038c85ffd3\" type=\"presenter/preview\" ref=\"track:e9bea010-c81f-4d55-8d12-699e887c5c14\"><ns2:mimetype>video/mp4</ns2:mimetype><ns2:tags><ns2:tag>atom</ns2:tag><ns2:tag>default</ns2:tag><ns2:tag>engage-download</ns2:tag><ns2:tag>engage-streaming</ns2:tag><ns2:tag>rss</ns2:tag></ns2:tags><ns2:url>http://localhost:8080/static/mh_default_org/engage-player/sample-event-11/e7d32ea3-5a3a-4037-8378-2f890436b004/strong_river_flowing_down_the_green_forest.mp4</ns2:url><ns2:size>186375203</ns2:size><ns2:checksum type=\"md5\">c8c5561a5d55a255081f80073830e029</ns2:checksum><ns2:duration>29997</ns2:duration><ns2:video id=\"video-1\"><ns2:device/><ns2:encoder type=\"H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10\"/><ns2:framecount>899</ns2:framecount><ns2:bitrate>4.9702268E7</ns2:bitrate><ns2:framerate>29.97003</ns2:framerate><ns2:resolution>3840x2160</ns2:resolution></ns2:video><ns2:live>false</ns2:live><ns2:master>false</ns2:master></ns2:track></ns2:media><ns2:attachments><ns2:attachment id=\"26b15a44-d9c2-4115-ab53-86fa61d60b5c\" type=\"presenter/player+preview\" ref=\"track:e9bea010-c81f-4d55-8d12-699e887c5c14\"><ns2:mimetype>image/jpeg</ns2:mimetype><ns2:tags><ns2:tag>engage-download</ns2:tag></ns2:tags><ns2:url>http://localhost:8080/static/mh_default_org/engage-player/sample-event-11/951bea93-c616-4d32-bbb9-de005a8bccee/strong_river_flowing_down_the_green_forest_1_000s_player.jpg</ns2:url><ns2:size>156020</ns2:size></ns2:attachment><ns2:attachment id=\"45099e4d-9600-4d22-bac3-a6edf268a6f8\" type=\"presenter/search+preview\" ref=\"track:e9bea010-c81f-4d55-8d12-699e887c5c14\"><ns2:mimetype>image/jpeg</ns2:mimetype><ns2:tags><ns2:tag>engage-download</ns2:tag></ns2:tags><ns2:url>http://localhost:8080/static/mh_default_org/engage-player/sample-event-11/b40e64ee-86be-4657-8e0a-d89a79f3331c/strong_river_flowing_down_the_green_forest_1_000s_search.jpg</ns2:url><ns2:size>4879</ns2:size></ns2:attachment><ns2:attachment id=\"21c7b984-5049-4959-bbfa-f92e832345b7\" type=\"security/xacml+episode\"><ns2:mimetype>text/xml</ns2:mimetype><ns2:tags/><ns2:url>http://localhost:8080/static/mh_default_org/engage-player/sample-event-11/52462dd4-8997-4fd8-870a-cc65f361e716/episode_security.xml</ns2:url></ns2:attachment></ns2:attachments><ns2:metadata><ns2:catalog id=\"571fd33b-f32c-4dd9-a79b-e66de2fc13f7\" type=\"dublincore/episode\"><ns2:mimetype>text/xml</ns2:mimetype><ns2:tags/><ns2:url>http://localhost:8080/static/mh_default_org/engage-player/sample-event-11/d64ee418-8582-4112-a822-c6288c2b3d2f/dublincore.xml</ns2:url></ns2:catalog></ns2:metadata></ns3:publication></ns3:publications><ns3:archive_version>1</ns3:archive_version><ns3:event_status>EVENTS.EVENTS.STATUS.PROCESSED</ns3:event_status><ns3:agent_configuration/><ns3:technical_start_time>2019-06-18T07:40:53Z</ns3:technical_start_time></ns3:event>"
+          ]
+        }
+      }
+    ]
+  }
+}

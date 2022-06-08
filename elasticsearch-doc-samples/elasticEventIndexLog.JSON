@@ -1,0 +1,371 @@
+{
+  "opencast_event" : {
+    "aliases" : { },
+    "mappings" : {
+      "dynamic" : "true",
+      "dynamic_templates" : [
+        {
+          "permission_template" : {
+            "match" : "acl_permission_*",
+            "match_mapping_type" : "string",
+            "mapping" : {
+              "type" : "keyword"
+            }
+          }
+        }
+      ],
+      "properties" : {
+        "access_policy" : {
+          "type" : "text"
+        },
+        "acl_permission_read" : {
+          "type" : "keyword"
+        },
+        "acl_permission_write" : {
+          "type" : "keyword"
+        },
+        "agent_configuration" : {
+          "type" : "object"
+        },
+        "agent_id" : {
+          "type" : "keyword"
+        },
+        "archive_version" : {
+          "type" : "long"
+        },
+        "contributor" : {
+          "type" : "keyword"
+        },
+        "created" : {
+          "type" : "keyword"
+        },
+        "creator" : {
+          "type" : "keyword"
+        },
+        "description" : {
+          "type" : "keyword"
+        },
+        "duration" : {
+          "type" : "long"
+        },
+        "end_date" : {
+          "type" : "keyword"
+        },
+        "event_status" : {
+          "type" : "keyword"
+        },
+        "has_comments" : {
+          "type" : "boolean"
+        },
+        "has_open_comments" : {
+          "type" : "boolean"
+        },
+        "language" : {
+          "type" : "keyword"
+        },
+        "license" : {
+          "type" : "keyword"
+        },
+        "location" : {
+          "type" : "keyword"
+        },
+        "managed_acl" : {
+          "type" : "keyword"
+        },
+        "needs_cutting" : {
+          "type" : "boolean"
+        },
+        "object" : {
+          "type" : "text",
+          "index" : false,
+          "store" : true
+        },
+        "organization" : {
+          "type" : "keyword",
+          "store" : true
+        },
+        "presenter" : {
+          "type" : "keyword"
+        },
+        "publication" : {
+          "type" : "nested",
+          "properties" : {
+            "attachment" : {
+              "type" : "nested",
+              "properties" : {
+                "checksum" : {
+                  "type" : "nested",
+                  "properties" : {
+                    "type" : {
+                      "type" : "keyword"
+                    },
+                    "value" : {
+                      "type" : "keyword"
+                    }
+                  }
+                },
+                "id" : {
+                  "type" : "keyword"
+                },
+                "mimetype" : {
+                  "type" : "keyword"
+                },
+                "size" : {
+                  "type" : "long"
+                },
+                "tag" : {
+                  "type" : "keyword"
+                },
+                "type" : {
+                  "type" : "keyword"
+                },
+                "url" : {
+                  "type" : "keyword"
+                }
+              }
+            },
+            "catalog" : {
+              "type" : "nested",
+              "properties" : {
+                "checksum" : {
+                  "type" : "nested",
+                  "properties" : {
+                    "type" : {
+                      "type" : "keyword"
+                    },
+                    "value" : {
+                      "type" : "keyword"
+                    }
+                  }
+                },
+                "id" : {
+                  "type" : "keyword"
+                },
+                "mimetype" : {
+                  "type" : "keyword"
+                },
+                "size" : {
+                  "type" : "long"
+                },
+                "tag" : {
+                  "type" : "keyword"
+                },
+                "type" : {
+                  "type" : "keyword"
+                },
+                "url" : {
+                  "type" : "keyword"
+                }
+              }
+            },
+            "channel" : {
+              "type" : "keyword"
+            },
+            "mimetype" : {
+              "type" : "keyword"
+            },
+            "track" : {
+              "type" : "nested",
+              "properties" : {
+                "audio" : {
+                  "type" : "nested",
+                  "properties" : {
+                    "bitdepth" : {
+                      "type" : "integer"
+                    },
+                    "bitrate" : {
+                      "type" : "float"
+                    },
+                    "channels" : {
+                      "type" : "integer"
+                    },
+                    "peakleveldb" : {
+                      "type" : "float"
+                    },
+                    "rmsleveldb" : {
+                      "type" : "float"
+                    },
+                    "rmspeakdb" : {
+                      "type" : "float"
+                    },
+                    "samplingrate" : {
+                      "type" : "integer"
+                    }
+                  }
+                },
+                "duration" : {
+                  "type" : "long"
+                },
+                "id" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "mimetype" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "size" : {
+                  "type" : "long"
+                },
+                "tag" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "transport" : {
+                  "type" : "keyword"
+                },
+                "type" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "video" : {
+                  "type" : "nested",
+                  "properties" : {
+                    "bitrate" : {
+                      "type" : "float"
+                    },
+                    "framerate" : {
+                      "type" : "float"
+                    },
+                    "resolution" : {
+                      "type" : "keyword"
+                    },
+                    "scantype" : {
+                      "type" : "keyword"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "publisher" : {
+          "type" : "keyword"
+        },
+        "recording_status" : {
+          "type" : "keyword"
+        },
+        "rights" : {
+          "type" : "keyword"
+        },
+        "series_id" : {
+          "type" : "keyword"
+        },
+        "series_name" : {
+          "type" : "keyword"
+        },
+        "source" : {
+          "type" : "keyword"
+        },
+        "start_date" : {
+          "type" : "keyword"
+        },
+        "subject" : {
+          "type" : "keyword"
+        },
+        "technical_end" : {
+          "type" : "keyword"
+        },
+        "technical_presenters" : {
+          "type" : "keyword"
+        },
+        "technical_start" : {
+          "type" : "keyword"
+        },
+        "text" : {
+          "type" : "text",
+          "analyzer" : "lowercasespaceanalyzer"
+        },
+        "text_fuzzy" : {
+          "type" : "text",
+          "analyzer" : "lowercasespaceanalyzer"
+        },
+        "title" : {
+          "type" : "keyword"
+        },
+        "uid" : {
+          "type" : "keyword",
+          "store" : true
+        },
+        "version" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "workflow_definition" : {
+          "type" : "keyword"
+        },
+        "workflow_definition_id" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "workflow_id" : {
+          "type" : "long"
+        },
+        "workflow_state" : {
+          "type" : "keyword"
+        }
+      }
+    },
+    "settings" : {
+      "index" : {
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "opencast_event",
+        "max_result_window" : "2147483647",
+        "creation_date" : "1654246487540",
+        "analysis" : {
+          "analyzer" : {
+            "lowercasespaceanalyzer" : {
+              "filter" : [
+                "lowercase"
+              ],
+              "type" : "custom",
+              "tokenizer" : "whitespace"
+            }
+          }
+        },
+        "number_of_replicas" : "0",
+        "uuid" : "oPVgJZXyQM2clr-LPck4Pw",
+        "version" : {
+          "created" : "7100299"
+        }
+      }
+    }
+  }
+}
