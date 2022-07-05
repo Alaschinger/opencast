@@ -1644,7 +1644,7 @@ public class WorkflowServiceImpl extends AbstractIndexProducer implements Workfl
   }
 
   /**
-   * {@inheritDoc}
+   * {@inheritDoc}f
    *
    * @see org.opencastproject.job.api.AbstractJobProducer#acceptJob(org.opencastproject.job.api.Job)
    */
@@ -2290,14 +2290,47 @@ public class WorkflowServiceImpl extends AbstractIndexProducer implements Workfl
       event.setWorkflowState(workflowState);
       return Optional.of(event);
     };
+    ParallelWorkflowUpdate update = new ParallelWorkflowUpdate(index, id, mpId, updateFunction, orgId, user);
+    update.start();
+  }
 
-    try {
-      index.addOrUpdateEvent(mpId, updateFunction, orgId, user);
-      logger.debug("Workflow instance {} of event {} updated in the {} index.", id, mpId,
-              index.getIndexName());
-    } catch (SearchIndexException e) {
-      logger.error("Error updating the workflow instance {} of event {} in the {} index.", id, mpId,
-              index.getIndexName(), e);
+  private class ParallelWorkflowUpdate implements Runnable {
+    private Thread t;
+    private final ElasticsearchIndex index;
+    private final long id;
+    private final String mpId;
+    private final Function<Optional<Event>, Optional<Event>> updateFunction;
+    private final String orgId;
+    private final User user;
+
+    ParallelWorkflowUpdate(ElasticsearchIndex searchIndex, long workflowId, String mediapackageId,
+            Function<Optional<Event>, Optional<Event>> function, String organisation, User securityUser) {
+      index = searchIndex;
+      id = workflowId;
+      mpId = mediapackageId;
+      updateFunction = function;
+      orgId = organisation;
+      user = securityUser;
     }
+
+    public void run() {
+      logger.error("Thread {} is running!", Thread.currentThread().getId());
+      try {
+        index.addOrUpdateEvent(mpId, updateFunction, orgId, user);
+        logger.debug("Workflow instance {} of event {} updated in the {} index.", id, mpId,
+                index.getIndexName());
+      } catch (SearchIndexException e) {
+        logger.error("Error updating the workflow instance {} of event {} in the {} index.", id, mpId,
+                index.getIndexName(), e);
+      }
+    }
+
+    public void start() {
+       if (t == null) {
+          t = new Thread(this);
+          t.start();
+       }
+    }
+
   }
 }
